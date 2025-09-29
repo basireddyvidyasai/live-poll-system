@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+.historyButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+}
+.questionSection {
+    position: relative;
+}
+.timeSelect {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.form textarea, .form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+.addOptionBtn {
+    background: none;
+    border: 1px dashed #6c63ff;
+    color: #6c63ff;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.askButton, .newQuestionBtn {
+    width: auto;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.2s;
+}
+.askButton:hover, .newQuestionBtn:hover {
+    background-color: #524ac9;
+}
+.pollContainer {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+}
+.resultBarContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 4px;
+}
+.resultBar {
+    flex-grow: 1;
+    height: 30px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.resultFill {
+    height: 100%;
+    background-color: #6c63ff;
+    transition: width 0.5s ease-in-out;
+}
+.sidePanels {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.optionInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.correctCheckbox {
+  margin-left: 10px;
+}
+
+.correctAnswer {
+  background-color: #d4edda; /* light green highlight */
+  border-left: 5px solid #28a745;
+  padding: 5px;
+  border-radius: 5px;
+}
